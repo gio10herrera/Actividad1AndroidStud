@@ -5,15 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/backgrounds"
 
-    <TextView
-        android:layout_width="wrap_content"
+    android:paddingVertical="32dp">
+
+    <Button
+        android:id="@+id/buscarEst"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/promEdad"
+        android:text="@string/buscEstud"
+        android:backgroundTint="@color/botones"
+        android:textColor="@color/textos"
+    />
+
+    <Button
+        android:id="@+id/promEdad"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buscarEst"
+        android:text="@string/promEdad"
+        android:backgroundTint="@color/botones"
+        android:textColor="@color/textos"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
