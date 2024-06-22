@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toStartOf="@id/promEdad"
         android:text="@string/buscEstud"
         android:backgroundTint="@color/botones"
-        android:textColor="@color/textos"
+        android:textColor="@color/textosSecundarios"
     />
 
     <Button
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@id/buscarEst"
         android:text="@string/promEdad"
         android:backgroundTint="@color/botones"
-        android:textColor="@color/textos"
+        android:textColor="@color/textosSecundarios"
         />
 
 
