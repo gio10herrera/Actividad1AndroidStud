@@ -2,23 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/mainBuscarEst"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BuscarEstudiante"
+    tools:context=".views.BuscarEstudiante"
     android:background="@color/backgrounds">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTxtDni"
+        android:id="@+id/txtInputLayoutDni"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:boxBackgroundColor="@color/tarjetas"
-        android:hint="@string/dniEstud">
+        app:helperTextEnabled="true"
+        app:helperText="Escriba el dni del estudiante"
+        app:helperTextTextColor="@color/textosSecundarios"
+        app:boxStrokeColor="@color/textos"
+        app:boxStrokeWidth="10dp"
+        app:boxStrokeWidthFocused="1dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+
             />
 
 
@@ -28,7 +35,7 @@
         android:id="@+id/btnBuscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/editTxtDni"
+        app:layout_constraintTop_toBottomOf="@id/txtInputLayoutDni"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/buscEstud"
