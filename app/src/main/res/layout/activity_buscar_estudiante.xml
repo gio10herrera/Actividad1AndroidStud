@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:boxBackgroundColor="@color/tarjetas"
+        app:boxBackgroundColor="@color/otros"
         app:helperTextEnabled="true"
         app:helperText="Escriba el dni del estudiante"
         app:helperTextTextColor="@color/textosSecundarios"
