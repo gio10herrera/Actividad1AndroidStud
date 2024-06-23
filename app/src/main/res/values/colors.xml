@@ -3,9 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backgrounds">#001700</color>
-    <color name="tarjetas">#0c2b14</color>
+    <color name="otros">#0c2b14</color>
     <color name="botones">#183e28</color>
-    <color name="bordes">#23523c</color>
+    <color name="cards">#23523c</color>
     <color name="textos">#2f654f</color>
     <color name="textosSecundarios">#c3ede1</color>
 </resources>

@@ -11,4 +11,5 @@
     <string name="pais">Pais de residencia</string>
     <string name="estado">Estado de la maestria</string>
     <string name="infoSnackbar">No se encontró el estudiante</string>
+    <string name="tituloEstudiante">ESTUDIANTES</string>
 </resources>

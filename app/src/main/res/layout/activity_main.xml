@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".views.MainActivity"
     android:background="@color/backgrounds"
-
     android:paddingVertical="32dp">
 
     <Button
@@ -39,6 +38,30 @@
         android:backgroundTint="@color/botones"
         android:textColor="@color/textosSecundarios"
         />
+
+    <TextView
+        android:id="@+id/txtStudents"
+        android:text="@string/tituloEstudiante"
+        app:layout_constraintTop_toBottomOf="@id/btnPromEdad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtStudents"
+        android:paddingBottom="70dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
 
 
 
