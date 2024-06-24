@@ -23,6 +23,22 @@ class EstudianteAdapter(private val estudiantes: List<EstudianteModel>) : Recycl
 
     //adaptar una de las vistas
     override fun onBindViewHolder(holder: EstudianteViewHolder, position: Int) {
-        holder.render(estudiantes[position])
+        val est = estudiantes[position]
+        holder.render(est)
+        holder.itemView.setOnClickListener {
+            listener?.onItemClick(est.nombre, est.apellido, est.master, est.estado)
+        }
+    }
+
+    // Interfaz para manejar los clics
+    interface OnItemClickListener {
+        fun onItemClick(nombre: String, apellido: String, master: String, estado: String)
+    }
+
+    private var listener: OnItemClickListener? = null
+
+    // Método para establecer el listener
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.listener = listener
     }
 }

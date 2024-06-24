@@ -36,6 +36,7 @@ class EstudianteViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             "colombia" -> imgViewBandera.setImageResource(R.drawable.bandera_col)
             "argentina" -> imgViewBandera.setImageResource(R.drawable.bandera_arg)
             "mexico" -> imgViewBandera.setImageResource(R.drawable.bandera_mex)
+            else -> imgViewBandera.setImageResource(R.drawable.sin_bandera)
         }
 
     }
