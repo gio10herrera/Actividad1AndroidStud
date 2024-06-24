@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.actividad1androidstud.R
-import com.example.actividad1androidstud.models.Estudiante
 import com.example.actividad1androidstud.models.EstudianteModel
 import com.example.actividad1androidstud.views.viewHolders.EstudianteViewHolder
 

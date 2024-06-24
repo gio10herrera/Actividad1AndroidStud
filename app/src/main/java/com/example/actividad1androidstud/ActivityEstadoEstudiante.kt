@@ -12,10 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.actividad1androidstud.views.MainActivity
 
 class ActivityEstadoEstudiante : AppCompatActivity() {
-
-
-
-
+    //Activity para mostrar si el estudiante esta aprobado, pendiente o reprobado
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

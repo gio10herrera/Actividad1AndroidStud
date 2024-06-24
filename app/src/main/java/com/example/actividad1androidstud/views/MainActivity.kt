@@ -2,11 +2,8 @@ package com.example.actividad1androidstud.views
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Rect
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,12 +14,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.actividad1androidstud.ActivityEstadoEstudiante
 import com.example.actividad1androidstud.R
 import com.example.actividad1androidstud.adapters.EstudianteAdapter
-import com.example.actividad1androidstud.models.Estudiante
 import com.example.actividad1androidstud.models.EstudianteModel
 import com.example.actividad1androidstud.models.EstudianteProvider
 import com.example.actividad1androidstud.models.modelEstudianteFirestore.EstudianteResponse
 import com.example.actividad1androidstud.services.RetrofitServiceFactory
-import com.example.actividad1androidstud.views.viewHolders.EstudianteViewHolder
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity(), EstudianteAdapter.OnItemClickListener {
@@ -79,6 +74,9 @@ class MainActivity : AppCompatActivity(), EstudianteAdapter.OnItemClickListener 
             estudiantesAdapter.notifyDataSetChanged()
         }
     }
+
+    //sobre escribimos onItemClick para que cada vez que se haga click en un item del
+    //recyclerView se abra una pantalla y muestre los datos de dicho estudiante
     override fun onItemClick(nombre: String, apellido: String, master: String, estado: String) {
         // Abrir la ActivityEstadoEstudiante y pasar los datos del estudiante como extras
         val intent = Intent(this, ActivityEstadoEstudiante::class.java)
