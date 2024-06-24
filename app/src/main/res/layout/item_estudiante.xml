@@ -11,31 +11,57 @@
     app:cardBackgroundColor="@color/cards"
     app:cardCornerRadius="16dp">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_vertical"
         android:layout_margin="8dp"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txtNombreEstudiante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="PRUEBA"
+            android:layout_marginEnd="10dp"
             android:textColor="@color/white"
+            android:textSize="19sp"
             android:textStyle="bold"
-            android:textSize="19sp"/>
+            tools:text="PRUEBA" />
 
-        <View
-            android:id="@+id/divider"
-            android:layout_marginTop="4dp"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            tools:background="@color/textosSecundarios"
-            />
+        <TextView
+            android:id="@+id/txtDniEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            tools:text="DNI"
+            android:layout_gravity="start|center"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txtMasterEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            tools:text="MASTER"
+            android:layout_gravity="start|bottom"/>
+
+
+
+
+
+            <ImageView
+                android:id="@+id/imgViewBandera"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="end|top"
+                android:src="@drawable/sin_bandera" />
+
+
+
+
+    </FrameLayout>
 
 
 </androidx.cardview.widget.CardView>
