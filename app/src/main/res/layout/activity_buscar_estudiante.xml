@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBuscarEst"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.BuscarEstudiante"
+    android:background="@color/backgrounds">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInputLayoutDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:boxBackgroundColor="@color/otros"
+        app:helperTextEnabled="true"
+        app:helperText="Escriba el dni del estudiante"
+        app:helperTextTextColor="@color/textosSecundarios"
+        app:boxStrokeColor="@color/textos"
+        app:boxStrokeWidth="10dp"
+        app:boxStrokeWidthFocused="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtInputLayoutDni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/buscEstud"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/botones"
+        android:textColor="@color/textosSecundarios"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBuscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="Camilo"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apellido"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="Zuluaga"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dni"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="1044556325"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edad"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="25 Años"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/master"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtMaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="Desarrollo Web"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pais"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtPais"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="Colombia"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/estado"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textosSecundarios"
+            android:textSize="23sp"
+            tools:text="Aprobado"
+            android:layout_marginBottom="25dp"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

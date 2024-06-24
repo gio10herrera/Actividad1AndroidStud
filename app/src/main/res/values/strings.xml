@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Actividad1AndroidStud</string>
+    <string name="promEdad">Hallar promedio de edad</string>
+    <string name="buscEstud">Buscar estudiante (Click Aquí)</string>
+    <string name="dniEstud">Escriba el dni del estudiante</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="dni">DNI</string>
+    <string name="edad">Edad</string>
+    <string name="master">Master Cursado</string>
+    <string name="pais">Pais de residencia</string>
+    <string name="estado">Estado de la maestria</string>
+    <string name="infoSnackbar">No se encontró el estudiante</string>
+    <string name="tituloEstudiante">ESTUDIANTES</string>
+    <string name="regresar">Regresar</string>
 </resources>
